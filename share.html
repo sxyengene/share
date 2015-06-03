@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ol,ul{
+		list-style:none;
+	}
+	</style>
+	<link rel="stylesheet" href="postdetail.css">
+</head>
+<body>
+	<div class="post-detail-tools">
+		<ul>
+			<li class="like-tool">
+				<div class="like-tool-bg"></div>
+				<div class="like-number">0</div>
+			</li>
+			<li class="comment-tool">
+				<div class="comment-tool-bg"></div>
+				<div class="comment-number">2</div>
+			</li>
+			<li class="share-tool">
+				<div class="share-tool-bg">
+					<div class="bdsharebuttonbox">
+						<div class="bdsharebuttonbox-bg"></div>
+						<a href="javascript:void(0);" class="bds_weixin" title="分享到微信">
+							<img style="display:none;" class="weixinshareimg" src="" alt="">
+						</a>
+						<a href="javascript:void(0);" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+						<a href="javascript:void(0);" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+					</div>
+				</div>
+			</li>
+			<li class="top-tool">
+				<div class="top-tool-bg"></div>
+				<div class="top">TOP</div>
+			</li>
+		</ul>
+	</div> 
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+	$(document).ready(function (){
+		$('.weixinshareimg').attr('src','http://qr.liantu.com/api.php?text='+window.location.href);
+
+		$('.share-tool').on('mouseenter mouseleave',function(e){
+			if(e.type == 'mouseenter'){
+				$(this).addClass('share-tool-hover');
+			}else{
+				$(this).removeClass('share-tool-hover');
+			}
+		});
+	});
+
+	window._bd_share_config={
+		"common":{
+			"bdSize":"16"
+		},
+		"share":{
+			"bdCustomStyle":"./share.css"
+		}
+	};
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+	</script>
+</body>
+</html>

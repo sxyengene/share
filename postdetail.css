@@ -1,0 +1,107 @@
+@charset "utf-8";
+.post-detail-tools{
+	width: 50px;
+	height: 224px;
+	background-color: #333;
+	position: fixed;
+	_position:absolute;
+	top: 135px;
+	left: 50%;
+	margin-left: 395px;
+	z-index: 600;
+	border-radius: 2px;
+	float: left;
+}
+
+.post-detail-tools li{
+	cursor: pointer;
+	border-top: 1px solid #222;
+	color: #ddd;
+	text-align: center;
+	font-size: 14px;
+	font-family: Microsoft YaHei;
+}
+
+.post-detail-tools li:first-child{
+	border-radius: 2px;
+}
+
+.post-detail-tools li:hover{
+	background-color: #222;
+	color: #fff;
+}
+
+.post-detail-tools .like-tool{
+	height: 65px;
+}
+
+.post-detail-tools .like-tool-bg{
+	width: 20px;
+	height: 20px;
+	margin: 14px auto 2px;
+	background: url("http://i.thsi.cn/sns/circle/newcircle/singlepost-icons.png") no-repeat;
+	background-position: -82px -10px;
+}
+
+.post-detail-tools .like-tool:hover .like-tool-bg{
+	background-position: -82px -39px;
+}
+
+.post-detail-tools .comment-tool{
+	height: 66px;
+}
+
+.post-detail-tools .comment-tool-bg{
+	width: 23px;
+	height: 21px;
+	margin: 14px auto 2px;
+	background: url("http://i.thsi.cn/sns/circle/newcircle/singlepost-icons.png") no-repeat;
+	background-position: -111px -10px;
+}
+
+.post-detail-tools .comment-tool:hover .comment-tool-bg{
+	background-position: -112px -39px;
+}
+
+.post-detail-tools .share-tool{
+	height: 44px;
+	position: relative;
+}
+
+.post-detail-tools .share-tool-bg{
+	width: 20px;
+	height: 20px;
+	margin: 10px auto;
+	background: url("http://i.thsi.cn/sns/circle/newcircle/singlepost-icons.png") no-repeat;
+	background-position: -142px -10px;
+}
+
+.post-detail-tools .share-tool:hover .share-tool-bg{
+	background-position: -142px -39px;
+}
+
+.post-detail-tools .top-tool{
+	height: 45px;
+	font-size: 13px;
+}
+
+.post-detail-tools .top-tool-bg{
+	width: 8px;
+	height: 5px;
+	margin: 12px auto -2px;
+	background: url("http://i.thsi.cn/sns/circle/newcircle/singlepost-icons.png") no-repeat;
+	background-position: -172px -10px;
+}
+
+.post-detail-tools .top-tool:hover .top-tool-bg{
+	background-position: -172px -39px;
+}
+
+
+
+
+
+
+
+
+

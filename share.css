@@ -1,0 +1,53 @@
+.share-tool-hover .bdsharebuttonbox{
+	display: block;
+}
+.bdsharebuttonbox{
+	position: absolute;
+	width: 163px;
+	height: 46px;
+	top: -1px;
+	right: 0;
+	display: none;
+}
+.bdsharebuttonbox-bg{
+	width: 113px;
+	height: 46px;
+	position: absolute;
+	right: 50px;
+	top: 0px;
+	background: #222;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.bdsharebuttonbox a{
+	background: url(http://i.thsi.cn/sns/circle/newcircle/post-tools-share.png) no-repeat 0 0;
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	position: relative;
+}
+.bdsharebuttonbox .bds_weixin{
+	background-position: 0 0;
+}
+.bdsharebuttonbox .bds_qzone{
+	background-position: 0 -30px;
+}
+.bdsharebuttonbox .bds_tsina{
+	background-position: 0 -60px;
+}
+.weixinshareimg{
+	width: 100px;
+	height: 100px;
+	border:1px solid #cccccc;
+	background-color: #fff;
+	position: absolute;
+	top: -117px;
+	left: -10px;
+}
+.bdsharebuttonbox .bds_weixin:hover .weixinshareimg{
+	display: block!important;
+}
